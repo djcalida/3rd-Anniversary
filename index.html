@@ -1,268 +1,268 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THIRD ANNIVERSARY</title>
-    <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to bottom right, #ffe6e6, #fff0f5);
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden; /* Prevent body overflow */
-}
-
-.Hello {
-    background-color: #ffccda;
-    border: solid 3px #e6005c;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 20px;
-    max-width: 600px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.Hello h1 {
-    color: #b30059;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.message p,
-.container-two p,
-.container-three p,
-.birthday-message p {
-    font-size: 1.1em;
-    color: #4d004d;
-    text-align: center; /* Centering the paragraph text */
-}
-
-button {
-    background-color: #ff6699;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    margin: 10px;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block;
-    text-align: center;
-}
-
-button:hover {
-    background-color: #ff3366;
-    transform: scale(1.05);
-}
-
-.message,
-.container-two,
-.container-three {
-    text-align: center;
-    margin-top: 30px;
-    display: block;
-    height: 100vh;
-}
-
-.container-two,
-.container-three,
-.birthday-message {
-    display: none;
-    height: 100vh;
-}
-
-.birthday-message {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #fff0f5;
-    border: 2px dashed #ff99cc;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 6px 20px rgba(255, 102, 153, 0.3);
-    overflow: auto; /* Ensures no content is cut off */
-    margin-top: 0; /* Ensures there's no extra margin at the top */
-}
-
-.birthday-message h1 {
-    color: #e6005c;
-    font-size: 2.5em;
-    margin-top: 0; /* Adjust top margin for heading */
-}
-
-.birthday-message p {
-    margin-top: 10px; /* Adjust top margin for paragraphs if needed */
-}
-
-
-.birthday-message img {
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-@media screen and (max-width: 768px) {
-    .Hello, .birthday-message {
-        margin: 20px;
-        padding: 20px;
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>THIRD ANNIVERSARY</title>
+        <style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to bottom right, #ffe6e6, #fff0f5);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden; /* Prevent body overflow */
     }
 
-    .Hello h1,
-    .birthday-message h1 {
-        font-size: 1.8em;
+    .Hello {
+        background-color: #ffccda;
+        border: solid 3px #e6005c;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 20px;
+        max-width: 600px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
-}
 
-@media screen and (max-width: 480px) {
+    .Hello h1 {
+        color: #b30059;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .message p,
+    .container-two p,
+    .container-three p,
+    .birthday-message p {
+        font-size: 1.1em;
+        color: #4d004d;
+        text-align: center; /* Centering the paragraph text */
+    }
+
     button {
-        padding: 8px 18px;
-        font-size: 14px;
+        background-color: #ff6699;
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        margin: 10px;
+        font-size: 16px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        display: inline-block;
+        text-align: center;
     }
 
-    .Hello h1,
+    button:hover {
+        background-color: #ff3366;
+        transform: scale(1.05);
+    }
+
+    .message,
+    .container-two,
+    .container-three {
+        text-align: center;
+        margin-top: 30px;
+        display: block;
+        height: 100vh;
+    }
+
+    .container-two,
+    .container-three,
+    .birthday-message {
+        display: none;
+        height: 100vh;
+    }
+
+    .birthday-message {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #fff0f5;
+        border: 2px dashed #ff99cc;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 6px 20px rgba(255, 102, 153, 0.3);
+        overflow: auto; /* Ensures no content is cut off */
+        margin-top: 0; /* Ensures there's no extra margin at the top */
+    }
+
     .birthday-message h1 {
-        font-size: 1.5em;
+        color: #e6005c;
+        font-size: 2.5em;
+        margin-top: 0; /* Adjust top margin for heading */
     }
-}
 
-p.left {
-    text-align: left;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-p.justify {
-    text-align: justify;
-    text-indent: 40px; /* indented first line */
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-}
-
-    </style>
-    
-</head>
-<body>
+    .birthday-message p {
+        margin-top: 10px; /* Adjust top margin for paragraphs if needed */
+    }
 
 
-    <!-- First message container -->
-    <div class="message">
-        <div class="Hello">
-            <h1>PLEASE ANSWER ALL THE QUESTIONS</h1>
+    .birthday-message img {
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    @media screen and (max-width: 768px) {
+        .Hello, .birthday-message {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .Hello h1,
+        .birthday-message h1 {
+            font-size: 1.8em;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        button {
+            padding: 8px 18px;
+            font-size: 14px;
+        }
+
+        .Hello h1,
+        .birthday-message h1 {
+            font-size: 1.5em;
+        }
+    }
+
+    p.left {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+    p.justify {
+        text-align: justify;
+        text-indent: 40px; /* indented first line */
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+    }
+
+        </style>
+        
+    </head>
+    <body>
+
+
+        <!-- First message container -->
+        <div class="message">
+            <div class="Hello">
+                <h1>PLEASE ANSWER ALL THE QUESTIONS</h1>
+            </div>
+            <p>Welcome to our 3rd Anniversary Baby</p>
+            <p>Would you like to continue?</p>
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+            <p id="responseMessage"></p>
         </div>
-        <p>Welcome to our 3rd Anniversary Baby</p>
-        <p>Would you like to continue?</p>
-        <button id="yesButton">Yes</button>
-        <button id="noButton">No</button>
-        <p id="responseMessage"></p>
-    </div>
 
-    <!-- Second message container -->
-    <div class="container-two">
-        <p>Hi, are you ready baby?</p>
-        <button id="yesGoodButton">Yes</button>
-        <button id="noGoodButton">No</button>
-        <p id="responseMessageTwo"></p>
-    </div>
+        <!-- Second message container -->
+        <div class="container-two">
+            <p>Hi, are you ready baby?</p>
+            <button id="yesGoodButton">Yes</button>
+            <button id="noGoodButton">No</button>
+            <p id="responseMessageTwo"></p>
+        </div>
 
-    <!-- Third message container -->
-    <div class="container-three">
-        <p>Are you sure baby?</p>
-        <button id="yesReadyButton">Yes</button>
-        <button id="noReadyButton">No</button>
-        <p id="responseMessageThree"></p>
-    </div>
+        <!-- Third message container -->
+        <div class="container-three">
+            <p>Are you sure baby?</p>
+            <button id="yesReadyButton">Yes</button>
+            <button id="noReadyButton">No</button>
+            <p id="responseMessageThree"></p>
+        </div>
 
-    <!-- Birthday message and images after clicking "Yes" on the third container -->
-    <div class="birthday-message">
-        <h1>❤️❤️ Happy 3rd Anniversary! ❤️❤️</h1>
-        <p class="left">Date: April 15, 2025</p>
-        <p class="left">Dear Baby soon to be my wife, </p>
-        <p class="justify">Happy 3rd Anniversary, baby! As I sit here reflecting on our time together, I am filled with immense gratitude for the love and joy you bring into my life. It has been such a blessing to walk this journey with you.
+        <!-- Birthday message and images after clicking "Yes" on the third container -->
+        <div class="birthday-message">
+            <h1>❤️❤️ Happy 3rd Anniversary! ❤️❤️</h1>
+            <p class="left">Date: April 15, 2025</p>
+            <p class="left">Dear Baby soon to be my wife, </p>
+            <p class="justify">Happy 3rd Anniversary, baby! As I sit here reflecting on our time together, I am filled with immense gratitude for the love and joy you bring into my life. It has been such a blessing to walk this journey with you.
 
-            I wrote this letter to express my deep affection and appreciation for you, and I sincerely hope that, despite its simplicity, you can feel the love behind each word. This idea first came to me last year, and since then, I have continued to develop it as a small token of my love for you. Over the years, we have shared countless memories both joyful and challenging but each has shaped the bond we share. On this special day, I just want to take a moment to express my gratitude for everything you are and all that we have shared.
-            
-            This anniversary marks the day you accepted my courtship, and I still remember the joy I felt after all the time I spent trying to win your heart. Our journey together has been filled with many special moments, and I am grateful for each of them. I am incredibly proud of the amazing person you have become, and seeing you achieve your dreams, including becoming a professional, fills me with pride and joy. I have always prayed for your success, and it warms my heart to see you thrive.
-            
-            I also remember the moments we shared at Simala Church the best day of our lives where I felt that everything we were working towards was coming to fruition. Everything you've done for me has been a blessing, and every day with you is another blessing I cherish deeply.
-            
-            Despite the challenges and struggles we've faced, please know that I am here by your side, always ready to support you in your battles. Never let difficulties or disagreements be a reason to pull us apart. And though I may make mistakes, you know that I am striving every day to be the best version of myself for you and for us.
-            
-            As we look toward the future, I am excited for the plans we have, especially the dream of starting our farm. This is one of the many ways I believe we can build the life we’ve always wanted. Everything I do, I do for you, and I hope you can see the effort and love I am putting into our shared dreams.
-            
-            I apologize for not being with you at this moment, but please know that I am thinking of you constantly. I miss you so much, and I promise that tonight we will celebrate both my birthday and our anniversary together. Our day will not end without us being together because I truly miss you.
-            
-            I can't wait to visit Camotes with you, and I am so excited to spend that time with you. You mean everything to me, and I will always be grateful for your love, patience, and understanding.
-            
-            Happy 3rd Anniversary, my baby. I love you more than words can express, and I hope this message brings you some comfort. Take care, and I can’t wait to be with you soon..</p>
-        <p class="left">Daniel John A. Calida</p>
-        <p class="left">Your soon to be Husband</p>
-        <br/><br/><br/>
-    </div>
+                I wrote this letter to express my deep affection and appreciation for you, and I sincerely hope that, despite its simplicity, you can feel the love behind each word. This idea first came to me last year, and since then, I have continued to develop it as a small token of my love for you. Over the years, we have shared countless memories both joyful and challenging but each has shaped the bond we share. On this special day, I just want to take a moment to express my gratitude for everything you are and all that we have shared.
+                
+                This anniversary marks the day you accepted my courtship, and I still remember the joy I felt after all the time I spent trying to win your heart. Our journey together has been filled with many special moments, and I am grateful for each of them. I am incredibly proud of the amazing person you have become, and seeing you achieve your dreams, including becoming a professional, fills me with pride and joy. I have always prayed for your success, and it warms my heart to see you thrive.
+                
+                I also remember the moments we shared at Simala Church the best day of our lives where I felt that everything we were working towards was coming to fruition. Everything you've done for me has been a blessing, and every day with you is another blessing I cherish deeply.
+                
+                Despite the challenges and struggles we've faced, please know that I am here by your side, always ready to support you in your battles. Never let difficulties or disagreements be a reason to pull us apart. And though I may make mistakes, you know that I am striving every day to be the best version of myself for you and for us.
+                
+                As we look toward the future, I am excited for the plans we have, especially the dream of starting our farm. This is one of the many ways I believe we can build the life we’ve always wanted. Everything I do, I do for you, and I hope you can see the effort and love I am putting into our shared dreams.
+                
+                I apologize for not being with you at this moment, but please know that I am thinking of you constantly. I miss you so much, and I promise that tonight we will celebrate both my birthday and our anniversary together. Our day will not end without us being together because I truly miss you.
+                
+                I can't wait to visit Camotes with you, and I am so excited to spend that time with you. You mean everything to me, and I will always be grateful for your love, patience, and understanding.
+                
+                Happy 3rd Anniversary, my baby. I love you more than words can express, and I hope this message brings you some comfort. Take care, and I can’t wait to be with you soon..</p>
+            <p class="left">Daniel John A. Calida</p>
+            <p class="left">Your soon to be Husband</p>
+            <br/><br/><br/><br/><br/>
+        </div>
 
-    <script>
-        // Get elements for the first container
-        const yesButton = document.getElementById('yesButton');
-        const noButton = document.getElementById('noButton');
-        const responseMessage = document.getElementById('responseMessage');
+        <script>
+            // Get elements for the first container
+            const yesButton = document.getElementById('yesButton');
+            const noButton = document.getElementById('noButton');
+            const responseMessage = document.getElementById('responseMessage');
 
-        // Get elements for the second container
-        const containerTwo = document.querySelector('.container-two');
-        const yesGoodButton = document.getElementById('yesGoodButton');
-        const noGoodButton = document.getElementById('noGoodButton');
-        const responseMessageTwo = document.getElementById('responseMessageTwo');
+            // Get elements for the second container
+            const containerTwo = document.querySelector('.container-two');
+            const yesGoodButton = document.getElementById('yesGoodButton');
+            const noGoodButton = document.getElementById('noGoodButton');
+            const responseMessageTwo = document.getElementById('responseMessageTwo');
 
-        // Get elements for the third container
-        const containerThree = document.querySelector('.container-three');
-        const yesReadyButton = document.getElementById('yesReadyButton');
-        const noReadyButton = document.getElementById('noReadyButton');
-        const responseMessageThree = document.getElementById('responseMessageThree');
+            // Get elements for the third container
+            const containerThree = document.querySelector('.container-three');
+            const yesReadyButton = document.getElementById('yesReadyButton');
+            const noReadyButton = document.getElementById('noReadyButton');
+            const responseMessageThree = document.getElementById('responseMessageThree');
 
-        // Get the birthday message container
-        const birthdayMessage = document.querySelector('.birthday-message');
+            // Get the birthday message container
+            const birthdayMessage = document.querySelector('.birthday-message');
 
-        // First container button functionality
-        yesButton.addEventListener('click', function() {
-            // Hide the first container and show the second container
-            document.querySelector('.message').style.display = 'none';
-            containerTwo.style.display = 'block';
-        });
+            // First container button functionality
+            yesButton.addEventListener('click', function() {
+                // Hide the first container and show the second container
+                document.querySelector('.message').style.display = 'none';
+                containerTwo.style.display = 'block';
+            });
 
-        noButton.addEventListener('click', function() {
-            responseMessage.textContent = 'You chose not to continue. Goodbye!';
-            responseMessage.style.color = 'red';
-        });
+            noButton.addEventListener('click', function() {
+                responseMessage.textContent = 'You chose not to continue. Goodbye!';
+                responseMessage.style.color = 'red';
+            });
 
-        // Second container button functionality
-        yesGoodButton.addEventListener('click', function() {
-            // Hide the second container and show the third container
-            document.querySelector('.container-two').style.display = 'none';
-            containerThree.style.display = 'block';
-        });
+            // Second container button functionality
+            yesGoodButton.addEventListener('click', function() {
+                // Hide the second container and show the third container
+                document.querySelector('.container-two').style.display = 'none';
+                containerThree.style.display = 'block';
+            });
 
-        noGoodButton.addEventListener('click', function() {
-            responseMessageTwo.textContent = 'Sorry to hear that. Take care!';
-            responseMessageTwo.style.color = 'red';
-        });
+            noGoodButton.addEventListener('click', function() {
+                responseMessageTwo.textContent = 'Sorry to hear that. Take care!';
+                responseMessageTwo.style.color = 'red';
+            });
 
-        // Third container button functionality
-        yesReadyButton.addEventListener('click', function() {
-            // Hide the third container and show the birthday message
-            document.querySelector('.container-three').style.display = 'none';
-            birthdayMessage.style.display = 'block';
-        });s
+            // Third container button functionality
+            yesReadyButton.addEventListener('click', function() {
+                // Hide the third container and show the birthday message
+                document.querySelector('.container-three').style.display = 'none';
+                birthdayMessage.style.display = 'block';
+            });s
 
-        noReadyButton.addEventListener('click', function() {
-            responseMessageThree.textContent = 'Take your time, we can wait!';
-            responseMessageThree.style.color = 'blue';
-        });
-    </script>
-</body>
-</html>
+            noReadyButton.addEventListener('click', function() {
+                responseMessageThree.textContent = 'Take your time, we can wait!';
+                responseMessageThree.style.color = 'blue';
+            });
+        </script>
+    </body>
+    </html>
