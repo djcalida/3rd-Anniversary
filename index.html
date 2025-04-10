@@ -13,8 +13,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center; /* Ensures all text is centered */
+    text-align: center;
+    overflow: hidden; /* Prevent body overflow */
 }
 
 .Hello {
@@ -67,12 +67,14 @@ button:hover {
     text-align: center;
     margin-top: 30px;
     display: block;
+    height: 100vh;
 }
 
 .container-two,
 .container-three,
 .birthday-message {
     display: none;
+    height: 100vh;
 }
 
 .birthday-message {
@@ -84,12 +86,20 @@ button:hover {
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 6px 20px rgba(255, 102, 153, 0.3);
+    overflow: auto; /* Ensures no content is cut off */
+    margin-top: 0; /* Ensures there's no extra margin at the top */
 }
 
 .birthday-message h1 {
     color: #e6005c;
     font-size: 2.5em;
+    margin-top: 0; /* Adjust top margin for heading */
 }
+
+.birthday-message p {
+    margin-top: 10px; /* Adjust top margin for paragraphs if needed */
+}
+
 
 .birthday-message img {
     width: 120px;
@@ -172,7 +182,6 @@ p.justify {
 
     <!-- Birthday message and images after clicking "Yes" on the third container -->
     <div class="birthday-message">
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <h1>❤️❤️ Happy 3rd Anniversary! ❤️❤️</h1>
         <p class="left">Date: April 15, 2025</p>
         <p class="left">Dear Baby soon to be my wife, </p>
@@ -195,6 +204,7 @@ p.justify {
             Happy 3rd Anniversary, my baby. I love you more than words can express, and I hope this message brings you some comfort. Take care, and I can’t wait to be with you soon..</p>
         <p class="left">Daniel John A. Calida</p>
         <p class="left">Your soon to be Husband</p>
+        <br/><br/><br/>
     </div>
 
     <script>
